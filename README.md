@@ -1,0 +1,4 @@
+BackgroundWatchPosition Plugin
+======
+
+Copyright Geotab

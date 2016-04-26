@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.geotab.BackgroundWatchPosition"
+        version="0.0.1">
+
+  <name>Background WatchPosition</name>
+
+  <description>
+    Persist watchPosition in background even on Android System WebView
+  </description>
+
+  <license>Proprietary</license>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+  </engines>
+
+  <!-- android -->
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="BackgroundWatchPosition">
+        <param name="android-package" value="com.geotab.BackgroundWatchPosition" />
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/com/geotab/BackgroundWatchPosition.java" target-dir="src/com/geotab"/>
+  </platform>
+
+</plugin>
