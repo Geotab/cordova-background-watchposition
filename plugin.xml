@@ -22,6 +22,7 @@
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="BackgroundWatchPosition">
         <param name="android-package" value="com.geotab.BackgroundWatchPosition" />
+        <param name="onload" value="true" />
       </feature>
     </config-file>
 
