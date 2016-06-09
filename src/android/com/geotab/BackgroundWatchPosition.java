@@ -27,7 +27,17 @@ public class BackgroundWatchPosition extends CordovaPlugin {
       public void run() {
         try {
           Thread.sleep(1000);
-          webView.getEngine().getView().dispatchWindowVisibilityChanged(View.VISIBLE);
+          cordova.getActivity().runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+              try {
+                Class.forName("org.crosswalk.engine.XWalkCordovaView");
+                ((XWalkCordovaView)webView.getEngine().getView()).onShow();
+              } catch (ClassNotFoundException e){
+                webView.getEngine().getView().dispatchWindowVisibilityChanged(View.VISIBLE);
+              }
+            }
+          });
         } catch (InterruptedException e) {
           // do nothing
         }
