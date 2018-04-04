@@ -1,0 +1,31 @@
+{
+  "name": "com.geotab.BackgroundWatchPosition",
+  "version": "0.0.1",
+  "description": "Persist watchPosition in background even on Android System WebView",
+  "cordova": {
+    "id": "com.geotab.BackgroundWatchPosition",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Geotab/cordova-background-watchposition.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Mike Murkovic",
+  "license": "Proprietary",
+  "bugs": {
+    "url": "https://github.com/Geotab/cordova-background-watchposition/issues"
+  },
+  "homepage": "https://github.com/Geotab/cordova-background-watchposition#readme"
+}
